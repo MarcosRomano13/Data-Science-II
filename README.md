@@ -56,3 +56,28 @@ La audiencia principal son ejecutivos de la industria, analistas de mercado y eq
 El análisis confirma que, si bien las calificaciones aportan información útil, **no son suficientes para explicar el éxito de un videojuego en ventas**. El verdadero valor está en combinar métricas de percepción del público con factores comerciales externos.  
 
 Los modelos de clasificación permiten obtener una visión práctica del mercado, ofreciendo a ejecutivos e inversores una herramienta para **detectar de forma temprana títulos con potencial de “ventas altas”** y así optimizar la asignación de recursos.  
+
+## 📌 Entrega Final: Machine Learning
+
+Este proyecto incorpora modelos de Machine Learning para predecir el éxito comercial de videojuegos.
+
+### Modelos utilizados
+- Clasificación: Random Forest y XGBoost
+- Regresión: Linear Regression
+
+### Ingeniería de atributos
+- Normalización de variables numéricas
+- Encoding de variables categóricas
+- Creación de nuevas variables derivadas
+
+### Optimización
+- GridSearchCV aplicado a Random Forest
+- Validación cruzada para selección de modelo
+
+### Resultados
+- El modelo de clasificación Random Forest optimizado obtuvo mejor desempeño (AUC > 0.75).
+- La regresión mostró bajo poder explicativo (R² < 0.3).
+- Se recomienda usar clasificación como herramienta práctica para detectar títulos con alto potencial de ventas.
+
+### Conclusiones
+Los modelos de Machine Learning permiten anticipar el éxito de un videojuego combinando reseñas y características de género/plataforma. La clasificación es más útil para la audiencia ejecutiva e inversora, mientras que la regresión requiere datos adicionales para mejorar su precisión.
